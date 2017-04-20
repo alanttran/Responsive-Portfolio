@@ -1,0 +1,247 @@
+*{
+	box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background: url('../images/background.png');
+}
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #777777;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: bold;
+}
+h1{
+	font-size: 24px;
+}
+h2{
+	font-size: 22px;
+}
+h3{
+	font-size: 20px;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 16px;
+}
+.body-content{
+	 min-height: 100%;
+
+	  /* Equal to height of footer */
+	  /* But also accounting for potential margin-bottom of last child */
+	  margin-bottom: -100px;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto; /*center*/
+
+}
+.clear:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.top-navigation-bar{
+	border-bottom: 1px solid #ccc;
+	height: 80px;
+	width: 100%;
+	margin-bottom: 20px;
+	background: white;
+}
+.my-name{
+	height: 80px;
+	width: auto;
+	float: left;
+	color: white;
+	font-size: 26px;
+	padding: 27px;
+	background: #4aaaa5;
+}
+.top-navigation{
+	float: right;
+	margin-top: 32px;
+	margin-right: 15px;
+	color: gray;
+}
+
+.top-navigation a{
+	color: gray;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.main-content, .contact-me{
+	padding: 30px;
+	border: 1px solid #ccc;
+	background: white;
+}
+.main-content{
+	width: 650px;
+	float: left;
+	margin-bottom: 25px;
+}
+.contact-me{
+	width: 270px;
+	float: right;
+}
+.main-content-body{
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 2px solid #ddd;
+	line-height: 2;
+}
+.profile-picture{
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	height: 150px;
+	width: 150px;
+}
+.contact-me__image{
+	width: 60px;
+	height: 60px;
+}
+.contact-me__image:hover{
+	opacity: 0.9;
+}
+.contact-me__image-stackoverflow{
+	width: 55px;
+	height: 55px;
+}
+.form-control{
+	width: 100%;
+	height: 30px;
+	display: block;
+	padding: 8px;
+}
+textarea.form-control{
+	height: 200px;
+}
+.bottom-spacer{
+	margin-bottom: 1rem;
+}
+.contact-me-button{
+	padding: 10px 30px 10px 30px;
+	color: white;
+	background: #4aaaa5;
+	border: none;
+	cursor: pointer;
+}
+.contact-me-button:active{
+	background: #337571;
+}
+.contact-me-button:hover{
+	background: #69beb9;
+}
+.portfolio-piece{
+	display: inline-block;
+	width: 47%;
+	background: green;
+	height: 200px;
+	position: relative;
+}
+.portfolio-piece:nth-child(odd){
+	margin-right: 30px;
+}
+.portfolio-peace__banner{
+	background: #4aaaa5;
+	width: 100%;
+	height: 50px;
+	padding-top: 6px;
+	position: absolute;
+	left: 0;
+	bottom:10px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.footer{
+	height: 70px;
+	border-top: 3px solid #4aaaa5;
+	background: #777;
+	text-align: center;
+	color: lightgray;
+	clear: both;
+	margin-top: 30px;
+	padding-top: 28px;
+	font-size: 13px;
+}
+
+@media screen and (max-width: 980px) {
+	.container{
+		padding: 0 3%;
+	}
+	.main-content{
+		width: 63%;
+	}
+	.contact-me{
+		width: 33%;
+	}
+	.profile-picture{
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+	.portfolio-piece, .portfolio-piece img{
+		width: 100%;
+		height: 352px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container{
+		padding: 0 3%;
+	}
+	.main-content{
+		width: 100%;
+	}
+	.contact-me{
+		width: 100%;
+	}
+	.profile-picture{
+		float: left;
+		width: 45%;
+		height: auto;
+	}
+	.portfolio-piece{
+		width: 45%;
+		height: 200px;
+	}
+	.portfolio-piece img{
+		height: 200px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.my-name{
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	.top-navigation{
+		float: none;
+		margin-top: 16px;
+	}
+	.top-navigation-bar{
+		height: 133px;
+
+	}
+	.top-navigation-bar .container{
+		padding: 0;
+	}
+	.top-navigation-bar a{
+		text-align: center;
+		width: 33%;
+		width: 31%;
+    	display: inline-block;
+	}
+	.portfolio-piece, .portfolio-piece img{
+		width: 100%;
+		height: 352px;
+	}
+}
