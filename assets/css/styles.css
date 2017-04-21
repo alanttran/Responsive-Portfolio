@@ -79,11 +79,11 @@ h5{
 	padding: 30px;
 	border: 1px solid #ccc;
 	background: white;
+	margin-bottom: 25px;
 }
 .main-content{
 	width: 650px;
 	float: left;
-	margin-bottom: 25px;
 }
 .contact-me{
 	width: 270px;
